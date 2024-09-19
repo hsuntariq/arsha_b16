@@ -1,0 +1,53 @@
+:root {
+  --primary: #37517e;
+}
+
+nav a {
+  text-transform: capitalize;
+  color: white !important;
+}
+
+.front {
+  background-color: var(--primary);
+}
+
+.front-image {
+  animation: animate 1.5s linear infinite alternate-reverse;
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.brand img {
+  filter: grayscale(100%);
+  transition: all 0.4s;
+}
+
+.brand img:hover {
+  filter: grayscale(0);
+}
+
+.text-blue {
+  color: #37517e;
+}
+
+.gray {
+  width: 13%;
+  height: 1px;
+  background-color: rgb(109, 109, 109);
+}
+
+.blue {
+  width: 40%;
+  height: 2px;
+  background-color: var(--bs-info);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
